@@ -1,0 +1,48 @@
+tproduk
+-------
+id
+ukm_id
+no_PIRT
+no_LPPOM
+nama produk
+kategori_id
+harga
+deskripsi
+stok
+foto
+foto1
+foto2
+
+ukm
+------
+id
+username
+password
+nama ukm
+ktp
+nama pemilik
+deskripsi ukm
+jidustri_id
+no_izin
+thn_berdiri
+alamat
+kota
+kecamatan
+propinsi
+foto ukm
+
+
+kategori
+--------
+kategori
+keterangan
+
+tbidang
+-------
+id
+jenis_industri
+
+admin
+----
+username
+password

@@ -1,0 +1,85 @@
+{% extends "t_admin/base.html" %}
+
+{% block konten%}
+    
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+    
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800">Industri</h1>
+                            <!--bagian bisa dimasukan form seacrh dari masing-masing data-->
+                            <p></p>
+                        </div>
+    
+                        <!-- Content Row -->
+                    
+                        <div class="row">
+    
+                            <!-- Data indusrti -->
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="card shadow mb-4">
+                                    <!-- Card Header - Dropdown -->
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">Input Jenis Industri</h6>
+                                       
+                                    </div>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!--form inputan-->
+                                        <p>bagian untuk meletakan form inputan</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Input Kategori -->
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="card shadow mb-4">
+                                    <!-- Card Header - Dropdown -->
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">Data Industri</h6>
+                                        
+                                    </div>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Jenis Industri</th>
+                                                            <th>Keterangan</th>
+                                                            <th>Proses</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Jenis Industri</th>
+                                                            <th>Keterangan</th>
+                                                            <th>Proses</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                    <tbody>
+                                                        {% for di in dataidustri %}
+                                                        <tr>
+                                                            <td>{{di.industri}}</td>
+                                                            <td>{{di.ket}}</td>
+                                                            <td><a class="btn btn-sm btn-warning" href="">Edit</a>  <a class="btn btn-sm btn-danger" href="">Hapus</a></td>
+                                                            
+                                                        </tr>
+                                                        {% endfor %}
+                                                    </tbody>
+                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    </div></div>      
+    
+    </div>
+                    <!-- /.container-fluid -->
+{% endblock%}
+    
